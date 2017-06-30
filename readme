@@ -1,0 +1,10 @@
+I remember pottering around on QBasic as a teenager trying to write a program
+to find solutions to peg solitaire by brute force.
+
+I never completed the project, and so this is my chance to go come back and tie
+off a loose end. So far, this contains an html file that runs a script that keeps
+track of human moves.
+
+The pegSolver script will solve games with any parameters set by the user.
+Or it will, very shortly! In the next few days, the html file will get the functionality
+that this will allow.

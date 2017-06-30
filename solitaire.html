@@ -1,0 +1,98 @@
+<html>
+  <head>
+
+    <style>
+      * {font-family: Garamond, Baskerville, 'Baskerville Old Face', 'Hoefler Text', 'Times New Roman', serif;
+      }
+
+      * {font-size: 14}
+
+      h1 {color: seagreen; font-size: 24
+      }
+    </style>
+
+    <script type="text/javascript" src="script.js"></script>
+  </head>
+  <body>
+      <center>
+          <h1 > Solitaire </h1>
+
+          <form id="form">
+          <div id = "parameters">
+          Board Width:
+
+          <select id="width">
+            <option value=1>1</option>
+            <option value=2>2</option>
+            <option value=3>3</option>
+            <option value=4>4</option>
+            <option value=5>5</option>
+            <option value=6>6</option>
+            <option value=7 selected="selected">7</option>
+            <option value=8>8</option>
+            <option value=9>9</option>
+            <option value=10>10</option>
+            <option value=11>11</option>
+            <option value=12>12</option>
+            <option value=13>13</option>
+            <option value=14>14</option>
+            <option value=15>15</option>
+            <option value=16>16</option>
+          </select>
+          Board Height:
+          <select id="height">
+            <option value=1>1</option>
+            <option value=2>2</option>
+            <option value=3>3</option>
+            <option value=4>4</option>
+            <option value=5>5</option>
+            <option value=6>6</option>
+            <option value=7 selected="selected">7</option>
+            <option value=8>8</option>
+            <option value=9>9</option>
+            <option value=10>10</option>
+            <option value=11>11</option>
+            <option value=12>12</option>
+            <option value=13>13</option>
+            <option value=14>14</option>
+            <option value=15>15</option>
+            <option value=16>16</option>
+          </select>
+          Size of square to cut from each corner:
+          <select id="cut">
+            <option value=1>1</option>
+            <option value=2 selected="selected">2</option>
+            <option value=3>3</option>
+            <option value=4>4</option>
+            <option value=5>5</option>
+          </select>
+
+          Location of blank tile:
+          <select id="blank">
+            <option value=1 selected="selected">Automatic</option>
+            <option value=2>Let me choose!</option>
+          </select>
+
+          </div>
+
+          <div style="margin:20px" id="buttonWrapper">
+              <button type="button" id="button" onclick="newGame();">Create Board</button>
+          </div>
+
+          <div id="newButtonDiv"></div>
+
+        </form>
+
+      <div id="instructions" style="margin:20px">
+      </div>
+
+      <div id="boardWrapper" style="margin:20px">
+      </div>
+
+      <div id="control" style="height:120px">
+      </div>
+
+      <script>document.getElementById("button").focus();</script>
+
+  </body>
+</html>
